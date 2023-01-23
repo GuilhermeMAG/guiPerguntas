@@ -17,7 +17,7 @@ services:
       - db
     build: ./src/
     ports:
-      - "80:80"
+      - "5000:5000"
     restart: always
     networks: 
       - dockercompose
