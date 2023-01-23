@@ -1,7 +1,7 @@
-CREATE DATABASE guiperguntas;
+CREATE DATABASE IF NOT EXISTS guiperguntas;
 
 USE guiperguntas;
-CREATE TABLE `perguntas` (
+CREATE TABLE IF NOT EXISTS `perguntas` (
   `id` int NOT NULL AUTO_INCREMENT,
   `titulo` varchar(255) NOT NULL,
   `descricao` text NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE `perguntas` (
   PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `respostas` (
+CREATE TABLE IF NOT EXISTS `respostas` (
   `id` int NOT NULL AUTO_INCREMENT,
   `corpo` text NOT NULL,
   `perguntaId` int NOT NULL,
